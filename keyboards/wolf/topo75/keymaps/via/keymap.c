@@ -61,12 +61,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     {12, 8, HSV_GREEN}       // Light 8 LEDs, starting with LED 12
+);
+const rgblight_segment_t PROGMEM layer_1[] = RGBLIGHT_LAYER_SEGMENTS(
+    {12, 8, HSV_ORANGE}       // Light 8 LEDs, starting with LED 12
+);
+const rgblight_segment_t PROGMEM layer_2[] = RGBLIGHT_LAYER_SEGMENTS(
+    {12, 8, HSV_MAGENTA}       // Light 8 LEDs, starting with LED 12
+);
+const rgblight_segment_t PROGMEM layer_3[] = RGBLIGHT_LAYER_SEGMENTS(
+    {12, 8, HSV_TEAL}       // Light 8 LEDs, starting with LED 12
 );
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
-    my_capslock_layer
+    capslock_layer,
+    layer_1,
+    layer_2,
+    layer_3
 );
 
 void keyboard_post_init_user(void) {
@@ -77,4 +89,11 @@ void keyboard_post_init_user(void) {
 bool led_update_user(led_t led_state) {
     rgblight_set_layer_state(0, led_state.caps_lock);
     return true;
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    rgblight_set_layer_state(1, layer_state_cmp(state, _LAYER1));
+    rgblight_set_layer_state(2, layer_state_cmp(state, _LAYER2));
+    rgblight_set_layer_state(3, layer_state_cmp(state, _LAYER3));
+    return state;
 }
