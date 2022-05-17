@@ -1,5 +1,5 @@
 {
-    "name": "Numpad_5x5",
+    "name": "Turtle Pad",
     "vendorId": "0x5453",
     "productId": "0x0000",
     "matrix": {"rows": 5, "cols": 5},

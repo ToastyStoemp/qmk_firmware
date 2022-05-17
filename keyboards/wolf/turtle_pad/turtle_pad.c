@@ -20,11 +20,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef RGB_MATRIX_ENABLE
 led_config_t g_led_config = { 
 {
-    { NO_LED, 0, 1, 2, 3     },
-    { 4, 5, 6, 7, NO_LED     },
-    { 8, 9, 10, 11, 12       },
-    { 13, 14, 15, 16, NO_LED },
-    { 17, 18, NO_LED, 19, 20 }
+    { NO_LED, 0,      1,  2,      3 },
+    { 4,      5,      6,  7, NO_LED },
+    { 8,      9,     10, 11,     12 },
+    { 13,    14,     15, 16, NO_LED },
+    { 17,    18, NO_LED, 19,     20 }
 }, 
 {
   // LED Index to Physical Position
@@ -38,7 +38,7 @@ led_config_t g_led_config = {
   4, 4, 4, 4, 
   4, 4, 4, 4, 4,
   4, 4, 4, 4,
-  4, 4, 4,    4,
+  4, 4,    4, 4,
 } };
 
 #endif
