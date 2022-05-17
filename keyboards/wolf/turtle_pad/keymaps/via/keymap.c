@@ -19,21 +19,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        RGB_MOD,   KC_F,   KC_G,   KC_H, KC_MINUS,
-        KC_B,   KC_7,   KC_8,   KC_9, KC_NO,
-        KC_C,   KC_4,   KC_5,   KC_6, KC_PLUS,
-        KC_D,   KC_1,   KC_2,   KC_3, KC_NO,
-        KC_E,   KC_0,   KC_NO, KC_DOT, KC_ENT
+        RGB_MOD,   KC_F,   KC_G,   KC_H,   KC_MINUS,
+        KC_B,      KC_7,   KC_8,   KC_9,   KC_NO,
+        KC_C,      KC_4,   KC_5,   KC_6,   KC_PLUS,
+        KC_D,      KC_1,   KC_2,   KC_3,   KC_NO,
+        KC_E,      KC_0,   KC_NO,  KC_DOT, KC_ENT
     ),
 
     [1] = LAYOUT(
-        RGB_MOD,   KC_F,   KC_G,   KC_H, KC_MINUS,
-        KC_B,   KC_7,   KC_8,   KC_9, KC_NO,
-        KC_C,   KC_4,   KC_5,   KC_6, KC_PLUS,
-        KC_D,   KC_1,   KC_2,   KC_3, KC_NO,
-        KC_E,   KC_0,   KC_NO, KC_DOT, KC_ENT
+        RGB_MOD,   KC_F,   KC_G,   KC_H,   KC_MINUS,
+        KC_B,      KC_7,   KC_8,   KC_9,   KC_NO,
+        KC_C,      KC_4,   KC_5,   KC_6,   KC_PLUS,
+        KC_D,      KC_1,   KC_2,   KC_3,   KC_NO,
+        KC_E,      KC_0,   KC_NO,  KC_DOT, KC_ENT
     )
-
 };
 
 bool encoder_update_kb(uint8_t index, bool clockwise) {
