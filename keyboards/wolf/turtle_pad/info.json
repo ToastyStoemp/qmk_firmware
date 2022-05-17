@@ -2,7 +2,7 @@
     "keyboard_name": "Turtle Pad",
     "url": "",
     "maintainer": "qmk",
-    "width": 4,
+    "width": 5,
     "height": 5,
     "layouts": {
         "LAYOUT": {
