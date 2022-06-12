@@ -21,7 +21,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID    0x5453 // ToastyStoemp - Wolf
-#define PRODUCT_ID   0x0004 // Morpheus
+#define PRODUCT_ID   0x0066 // Morpheus
 #define DEVICE_VER   0x0001 // Version 1
 #define MANUFACTURER    Pantheon Keys
 #define PRODUCT         Morpheus
